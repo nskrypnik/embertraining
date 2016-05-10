@@ -1,11 +1,12 @@
 import Resolver from '../../resolver'
 import config from '../../config/environment'
+const {modulePrefix, podModulePrefix} = config
 
 const resolver = Resolver.create()
 
 resolver.namespace = {
-  modulePrefix: config.modulePrefix,
-  podModulePrefix: config.podModulePrefix
+  modulePrefix,
+  podModulePrefix
 }
 
 export default resolver
