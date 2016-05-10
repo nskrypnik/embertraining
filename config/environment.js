@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'repo-browser',
+    podModulePrefix: 'pods',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
